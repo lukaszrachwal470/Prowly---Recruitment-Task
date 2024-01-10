@@ -1,0 +1,8 @@
+Feature: A user searches Bing.com for information about Prowly Media Monitoring
+
+Scenario: Filter search all
+
+Given: Bing.com is open
+And: Prowly Media Monitoring is entered in the search box
+When: Bing.com searches for results
+Then: all kinds of results are shown
