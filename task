@@ -41,3 +41,13 @@ When: precise answer is selected
 Then: more precise answer is shown
 And: suggestions for further questions appear
 
+Scenario: Open Bing AI chat first and after look for more precise answer
+
+Given: Bing.com is open
+When: chat is selected
+Then: chat window appear
+When: Prowly Media Monitoring is entered in message box
+Then: answer is shown
+When: precise answer is selected
+Then: more precise answer is shown
+And: suggestions for further questions appear
