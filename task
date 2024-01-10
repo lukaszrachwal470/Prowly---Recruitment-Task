@@ -15,3 +15,12 @@ When: Bing.com searches for results
 Then: All kinds of results are shown
 When: The video filter is selected
 Then: Video results are shown
+
+Scenario: Filter search news
+
+Given: Bing.com is open
+And: Prowly Media Monitoring is entered in the search box
+When: Bing.com searches for results
+Then: All kinds of results are shown
+When: The news filter is selected
+Then: News results are shown
