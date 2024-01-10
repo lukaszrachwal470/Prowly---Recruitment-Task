@@ -6,3 +6,12 @@ Given: Bing.com is open
 And: Prowly Media Monitoring is entered in the search box
 When: Bing.com searches for results
 Then: all kinds of results are shown
+
+Scenario: Filter search video
+
+Given: Bing.com is open
+And: Prowly Media Monitoring is entered in the search box
+When: Bing.com searches for results
+Then: All kinds of results are shown
+When: The video filter is selected
+Then: Video results are shown
