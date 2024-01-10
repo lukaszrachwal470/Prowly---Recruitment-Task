@@ -24,3 +24,20 @@ When: Bing.com searches for results
 Then: All kinds of results are shown
 When: The news filter is selected
 Then: News results are shown
+
+Feature: Collecting information about the Prowly Media Monitoring using Bing AI
+
+Scenario: Search for Prowly Media Monitoring in Bing.com first and after open Bing AI and look for more precise answer
+
+Given: Bing.com is open
+And: Prowly Media Monitoring is entered in the search box
+When: Bing.com searches for results
+Then: All kinds of results are shown
+When: chat is selected
+Then: chat window appear
+When: Bing AI generates answer
+Then: answer is shown
+When: precise answer is selected
+Then: more precise answer is shown
+And: suggestions for further questions appear
+
